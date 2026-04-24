@@ -187,356 +187,320 @@
 
         </div>
     </section>
-
-    
     <section class="grid gap-y-16">
         <div class="grid gap-y-6 justify-items-center">
             <span class="border-2 px-4 py-2 bg-gray-50 rounded-xl">Solutions For The Doubts</span>
             <h2 class="font-raleway font-extrabold text-4xl">Frequently Asked Questions</h2>
             <p class="text-xl w-2/3 text-center">Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
         </div>
-      <div class="grid grid-cols-2 gap-4">
-  <ul class="space-y-4 gap-16">
-    <!-- РїРµСЂРІС‹Рµ 4 СЌР»РµРјРµРЅС‚Р° -->
-  
- 
-            <li 
+        <ul class="flex flex-wrap gap-4 grid grid-cols-2" > 
+            <li  
             x-data="{ open: true }" 
             :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
-                <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl">
+                <div class="grid  " >
+                    <h4 class="font-bold text-xl self-center">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                 </div>
                 <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
                     @click="open = !open">
                     <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
                     <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </li>
-            <li 
+            <li  
             x-data="{ open: false }" 
             :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl ">
                 <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
+                    <h4 class="font-bold text-xl self-center">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                 </div>
                 <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
                     @click="open = !open">
                     <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
                     <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </li>
-            <li 
+            <li  
             x-data="{ open: false }" 
             :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl">
                 <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
+                    <h4 class="font-bold text-xl self-center ">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                 </div>
                 <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
                     @click="open = !open">
                     <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
                     <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </li>
-            <li 
+            <li  
             x-data="{ open: false }" 
             :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl">
                 <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
+                    <h4 class="font-bold text-xl self-center">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                 </div>
-              
+                
                 <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
-                    @click="open = !open">
-                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
-                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
-                </div>  </ul>
-                  <ul class="space-y-2">
-    <!-- РѕСЃС‚Р°РІС€РёРµСЃСЏ 4 СЌР»РµРјРµРЅС‚Р° -->
-            </li>
-            <li 
-            x-data="{ open: false }" 
-            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
-                <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
-                </div>
-                <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
                     @click="open = !open">
                     <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
                     <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </li>
-            <li 
+            <li  
             x-data="{ open: false }" 
             :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl">
                 <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
+                    <h4 class="font-bold text-xl self-center">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                 </div>
                 <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
                     @click="open = !open">
                     <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
                     <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </li>
-            <li 
+            <li  
             x-data="{ open: false }" 
             :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl">
                 <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
+                    <h4 class="font-bold text-xl self-center">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                 </div>
                 <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
                     @click="open = !open">
                     <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
                     <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </li>
-            <li 
+            <li  
             x-data="{ open: false }" 
             :class="open ? 'bg-gray-50' : 'bg-orange-50'"
-            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl">
                 <div class="grid gap-y-6">
-                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
-                    <template x-if="open">
-                        <div class="grid gap-y-6">
-                            <hr class="border">
-                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-                        </div>
-                    </template>
+                    <h4 class="font-bold text-xl self-center">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                 </div>
                 <div 
-                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li  
+            x-data="{ open: false }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="  border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl self-center">What are the school hours at Little Learners Academy?</h4>
+                    <hr class="border" :class="open ? '' : 'hidden'">
+                    <p :class="open ? '' : 'hidden'">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start" 
                     @click="open = !open">
                     <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
                     <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </li>
 
-         </ul>
-</div>
+        </ul>
+
     </section>
-     
-    <section class="grid gap-y-16 justify-items-center p-6">
-    <div class="grid gap-y-8 justify-items-center">
-        <span class="border-2 py-2 bg-gray-50 rounded">Explore More</span>
-        <h2 class="font-raleway font-extrabold text-5xl">Navigate through our Pages</h2>
-        <p class="text-xl w-2/3 text-center">Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
-    </div>
-
-    <div class="grid grid-cols-2 gap-16">
-        <!-- РљР°СЂС‚РѕС‡РєР° 1 -->
-       <article class="border-2 rounded-2xl shadow-[6px_6px_0_#000] pt-16 px-6 pb-6 bg-gray-50 hover:-translate-y-1 transition">
-                <div class="grid gap-y-4">
-                <h3 class="font-raleway text-2xl text-center">Admissions</h3>
-                <img src="/images/Container (1).png" alt="">
-                
-                <p>Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
-                <div class="text-center  ">
-             <button class=" bg-orange-200 hover:bg-orange-300 
-border-2 border-black rounded-xl py-4 w-full
-shadow-[6px_6px_black] ">
-    Learn More в†’
-</button></div>
-           
-        </article>
-
-        <!-- РљР°СЂС‚РѕС‡РєР° 2 -->
-   <article class="border-2 rounded-2xl shadow-[6px_6px_0_#000] pt-16 px-6 pb-6 bg-gray-50 hover:-translate-y-1 transition">
-                <div class="grid gap-y-4">
-                <h3 class="font-raleway text-2xl text-center">Admissions</h3>
-                <img src="/images/Container (1).png" alt="">
-                
-                <p>Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
-                <div class="text-center  ">
-             <button class=" bg-orange-200 hover:bg-orange-300 
-border-2 border-black rounded-xl py-4 w-full
-shadow-[6px_6px_black] ">
-    Learn More в†’
-</button></div>
-         
-        </article>
-
-        <!-- РљР°СЂС‚РѕС‡РєР° 3 -->
-<article class="border-2 rounded-2xl shadow-[6px_6px_0_#000] pt-16 px-6 pb-6 bg-gray-50 hover:-translate-y-1 transition">
-                 <div class="grid gap-y-4">
-                <h3 class="font-raleway text-2xl text-center">Admissions</h3>
-                <img src="/images/Container (1).png" alt="">
-                
-                <p>Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
-                <div class="text-center  ">
-             <button class=" bg-orange-200 hover:bg-orange-300 
-border-2 border-black rounded-xl py-4 w-full
-shadow-[6px_6px_black] ">
-    Learn More в†’
-</button></div>
-      
-        </article>
-
-        <!-- РљР°СЂС‚РѕС‡РєР° 4 -->
-        <article class="border-2 rounded-xl shadow-black pt-16 px-6 pb-6 bg-gray-50">
-            <div class="grid gap-y-4">
-                <h3 class="font-raleway text-2xl text-center">Admissions</h3>
-                <img src="/images/Container (1).png" alt="">
-                
-                <p>Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
-                <div class="text-center  ">
-             <button class=" bg-orange-200 hover:bg-orange-300 
-border-2 border-black rounded-xl py-4 w-full
-shadow-[6px_6px_black] ">
-    Learn More в†’
-</button></div>
-            </div>
-        </article>
-
-</section>
-
-
+    <section class="grid gap-y-16">
+        
+        <div class="grid gap-4 justify-items-center">
+            <span class="border-2 px-4 py-2 bg-gray-50 rounded-xl">Explore More</span>
+            <h2 class="font-raleway font-extrabold text-4xl">Navigate through our Pages</h2>
+            <p class="text-lg w-2/3 font-bold text-center">Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
+        </div>
+    </section>
+    <section class="grid gap-y-6  justify-items-center" >
+<ul class="grid grid-cols-2 gap-x-8 gap-y-8" >
+                <li class="bg-gray-50 border-2 rounded-2xl shadow-[6px_6px_black] grid gap-y-6 justify-items-center p-6 w-[588px] h-[773px]">
+                    <div class="grid pt-12 gap-y-10">
+                           <div class="text-4xl text-center font-bold">About Us</div>
+                           <div><img src="./images/Container (1).png" alt="" class="justify-self-center"></div>
+                          <h3 class="text-sm text-center h-20">Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.</h3>
+                        </div>
+                    <div class="w-full h-20"> <button class="bg-orange-200 h-14 w-full border-2  rounded-xl shadow-[6px_6px_black] ">
+                    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                 </button> </div>
+                  
+                </li>
+                     <li class="bg-gray-50 border-2 rounded-2xl shadow-[6px_6px_black] grid gap-y-6 justify-items-center p-6 w-[588px] h-[773px]">
+                    <div class="grid pt-12 gap-y-10">
+                           <div class="text-4xl text-center font-bold">Academics</div>
+                           <div><img src="./images/Container (1).png" alt="" class="justify-self-center"></div>
+                          <h3 class="text-sm text-center h-20">Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.</h3>
+                        </div>
+                    <div class="w-full h-20"> <button class="bg-orange-200 h-14 w-full border-2  rounded-xl shadow-[6px_6px_black] ">
+                    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                 </button> </div>
+                  
+                </li>
+                     <li class="bg-gray-50 border-2 rounded-2xl shadow-[6px_6px_black] grid gap-y-6 justify-items-center p-6 w-[588px] h-[773px]">
+                    <div class="grid pt-12 gap-y-10">
+                           <div class="text-4xl text-center font-bold">Student Life</div>
+                           <div><img src="./images/Container (1).png" alt="" class="justify-self-center"></div>
+                          <h3 class="text-sm text-center h-20">Peek into the vibrant and enriching world of Student Life at Little Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and social events that make our school experience truly memorable.</h3>
+                        </div>
+                    <div class="w-full h-20"> <button class="bg-orange-200 h-14 w-full border-2  rounded-xl shadow-[6px_6px_black] ">
+                    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                 </button> </div>
+                  
+                </li>
+                     <li class="bg-gray-50 border-2 rounded-2xl shadow-[6px_6px_black] grid gap-y-6 justify-items-center p-6 w-[588px] h-[773px]">
+                    <div class="grid pt-12 gap-y-10">
+                           <div class="text-4xl text-center font-bold">Admissions</div>
+                           <div><img src="./images/Container (1).png" alt="" class="justify-self-center"></div>
+                          <h3 class="text-sm text-center h-20">Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</h3>
+                        </div>
+                    <div class="w-full h-20"> <button class="bg-orange-200 h-14 w-full border-2  rounded-xl shadow-[6px_6px_black] ">
+                    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                 </button> </div>
+                  
+                </li>
+    </section>
     
+  </main>
+    <!-- ====================== FOOTER ====================== -->
+  <section class="py-12">
+    <div class="container mx-auto border-2 rounded-2xl bg-gray-50 px-8 py-12 shadow-[6px_6px_black]">
+      
+      <div class="flex gap-12">
+        
+        <!-- Левая колонка -->
+        <div class="flex-2 grid gap-y-6">
+          <a href="#" class="flex items-center gap-x-3 font-bold text-lg">
+            <div class="w-9 h-9 border-2 rounded-xl flex items-center justify-center bg-orange-200 flex-shrink-0"></div>
+            <img src="images/logo.png" alt="Little Learners" class="h-8">
+            Little Learners
+          </a>
 
-<footer class="bg-gray-100 border-2 border-black rounded-2xl mt-8">
-    <div class="max-w-[1720px] mx-auto px-16 py-16">
-        <div class="grid grid-cols-[1.1fr_2fr] gap-24">
-            <div>
-                <div class="flex items-center gap-3 mb-7">
-                    <img src="images/logo.png" alt="Little Learners" class="w-11 h-11 object-contain">
-                    <span class="text-3xl font-semibold tracking-tight">Little Learners</span>
-                </div>
+          <p class="text-sm font-bold leading-relaxed">
+            We believe in the power of play to foster creativity,<br>
+            problem-solving skills, and imagination.
+          </p>
 
-                <p class="text-base leading-relaxed text-gray-700 mb-10 max-w-[560px]">
-                    We believe in the power of play to foster creativity,
-                    problem-solving skills, and imagination.
-                </p>
-
-                <div class="space-y-4 text-base text-gray-800">
-                    <div class="flex items-center gap-3">
-                        <span>hello@littlelearners.com</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span>+91 91813 23 2309</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span>Somewhere in the World</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-4 gap-x-20 items-start text-base text-gray-800">
-                <div>
-                    <p class="font-semibold mb-4">Home</p>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="block">Features</a></li>
-                        <li><a href="#" class="block">Our Testimonials</a></li>
-                        <li><a href="#" class="block">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold mb-4">About Us</p>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="block">Our Mission</a></li>
-                        <li><a href="#" class="block">Our Vision</a></li>
-                        <li><a href="#" class="block">Awards and Recognitions</a></li>
-                        <li><a href="#" class="block">History</a></li>
-                        <li><a href="#" class="block">Teachers</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold mb-4">Academics</p>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="block">Special Features</a></li>
-                        <li><a href="#" class="block">Gallery</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold mb-4">Contact Us</p>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="block">Information</a></li>
-                        <li><a href="#" class="block">Map &amp; Direction</a></li>
-                    </ul>
-                </div>
-            </div>
+          <ul class="grid gap-y-4">
+            <li class="flex items-center gap-x-3">
+              <div class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              hello@littlelearners.com
+            </li>
+            <li class="flex items-center gap-x-3">
+              <div class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              +91 91813 23 2309
+            </li>
+            <li class="flex items-center gap-x-3">
+              <div class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              Somewhere in the World
+            </li>
+          </ul>
         </div>
 
-        <div class="mt-12 border-t border-black"></div>
+        <div class="flex flex-1 gap-x-10">   
+          
+          <div class="flex-1">
+            <h5 class="font-bold mb-4">Home</h5>
+            <ul class="grid gap-y-4 text-sm">  
+              <li><a href="#" class="hover:text-orange-400">Features</a></li>
+              <li><a href="#" class="hover:text-orange-400">Our Testimonials</a></li>
+              <li><a href="#" class="hover:text-orange-400">FAQ</a></li>
+            </ul>
+          </div>
 
-        <div class="py-7 flex items-center justify-between">
-            <div class="flex items-center gap-4 text-sm text-gray-800">
-                <a href="#">Terms of Service</a>
-                <span>|</span>
-                <a href="#">Privacy Policy</a>
-                <span>|</span>
-                <a href="#">Cookie Policy</a>
-            </div>
+          <div class="flex-1">
+            <h5 class="font-bold mb-4">About Us</h5>
+            <ul class="grid gap-y-4 text-sm">
+              <li><a href="#" class="hover:text-orange-400">Our Mission</a></li>
+              <li><a href="#" class="hover:text-orange-400">Our Vision</a></li>
+              <li><a href="#" class="hover:text-orange-400">Awards and Recognitions</a></li>
+              <li><a href="#" class="hover:text-orange-400">History</a></li>
+              <li><a href="#" class="hover:text-orange-400">Teachers</a></li>
+            </ul>
+          </div>
 
-            <div class="flex items-center gap-2 text-[26px]">
-                <a href="#" class="w-14 h-14 rounded-xl border-2 border-black bg-[#eecfbb] text-black flex items-center justify-center">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#" class="w-14 h-14 rounded-xl border-2 border-black bg-[#eecfbb] text-black flex items-center justify-center">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#" class="w-14 h-14 rounded-xl border-2 border-black bg-[#eecfbb] text-black flex items-center justify-center">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+          <div class="flex-1">
+            <h5 class="font-bold mb-4">Academics</h5>
+            <ul class="grid gap-y-4 text-sm">
+              <li><a href="#" class="hover:text-orange-400">Special Features</a></li>
+              <li><a href="#" class="hover:text-orange-400">Gallery</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="flex-1">
+            <h5 class="font-bold mb-4">Contact Us</h5>
+            <ul class="grid gap-y-4 text-sm">
+              <li><a href="#" class="hover:text-orange-400">Information</a></li>
+              <li><a href="#" class="hover:text-orange-400">Map & Direction</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-gray-300 h-8 my-8 justify-b">
+
+      <!-- Нижняя панель -->
+      <div class="flex justify-between items-center text-sm font-bold">
+        <div class="flex gap-x-4">
+          <a href="#" class="hover:text-orange-400">Terms of Service</a>
+          <span class="text-gray-400 ">|</span>
+          <a href="#" class="hover:text-orange-400">Privacy Policy</a>
+          <span class="text-gray-400">|</span>
+          <a href="#" class="hover:text-orange-400">Cookie Policy</a>
         </div>
 
-        <div class="border-t border-black pt-7 text-center text-sm text-gray-600">
-            Copyright &copy; [2023] Little Learners Academy. All rights reserved.
+        <div class="grid grid-cols-3 gap-4 ">
+          <a href="#" class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded ">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
         </div>
+      </div>
+
+      <hr class="border-gray-300 my-8 h-8">
+
+      <p class="text-center text-sm">
+        Copyright © 2023 Little Learners Academy. All rights reserved.
+      </p>
     </div>
-</footer>
-</main>
+  </section>
+
+  <div class="h-20">.</div>
+</body>
+</html>
 </body>
 </html>
